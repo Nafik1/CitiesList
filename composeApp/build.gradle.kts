@@ -7,11 +7,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
-    alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.kotlin.kapt)
-    id("kotlin-parcelize")
-    id("kotlin-kapt")
 }
 
 kotlin {
@@ -47,15 +43,10 @@ kotlin {
             implementation(compose.foundation)
             implementation(compose.material)
             implementation(compose.ui)
-            implementation(compose.runtime)
-            implementation(compose.foundation)
             implementation(compose.material3)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
-            implementation(compose.components.resources)
-            implementation(compose.components.uiToolingPreview)
-            implementation(libs.androidx.lifecycle.viewmodel)
-            implementation(libs.androidx.lifecycle.runtime.compose)
+
             implementation(libs.mvikotlin.main)
             implementation(libs.mvikotlin.core)
             implementation(libs.mvikotlin.coroutines)
@@ -64,20 +55,14 @@ kotlin {
             implementation(libs.decompose.jetpack)
 
             implementation(libs.ktor.core)
-            implementation(libs.ktor.android)
-            implementation(libs.ktor.serialization.jvm)
-            implementation(libs.ktor.serialization)
             implementation(libs.ktor.cio)
-            implementation(libs.ktor.okhttp)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.ktor.logging)
 
-
             implementation(libs.kodein.core)
             implementation(libs.kodein.erased)
 
-            implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)

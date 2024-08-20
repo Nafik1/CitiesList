@@ -18,7 +18,6 @@ kotlin = "2.0.0"
 kotlinx-coroutines = "1.8.1"
 mvikotlin = "3.2.1"
 decompose = "2.2.0"
-kotlinSerializationPlugin = "1.5.31"
 material3Android = "1.2.1"
 
 [libraries]
@@ -42,12 +41,8 @@ decompose-core = { group = "com.arkivanov.decompose", name = "decompose", versio
 decompose-jetpack = { group = "com.arkivanov.decompose", name = "extensions-compose-jetpack", version.ref = "decompose" }
 ktor-core = {group = "io.ktor", name = "ktor-client-core", version = "2.3.10"}
 ktor-cio = {group = "io.ktor", name = "ktor-client-cio", version = "2.3.10"}
-ktor-android = {group = "io.ktor", name = "ktor-client-android", version = "2.3.10"}
-ktor-okhttp = {group = "io.ktor", name = "ktor-client-okhttp", version = "2.3.10"}
 ktor-logging = { module = "io.ktor:ktor-client-logging", version = "2.3.10" }
-ktor-serialization = {group = "io.ktor", name = "ktor-client-serialization", version = "2.3.10"}
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version = "2.3.10" }
-ktor-serialization-jvm = {group = "io.ktor", name = "ktor-client-serialization-jvm", version = "2.3.10"}
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version = "2.3.10" }
 kodein-core = {group = "org.kodein.di", name = "kodein-di-core", version = "6.5.5"}
 kodein-erased = {group = "org.kodein.di", name = "kodein-di-erased", version = "6.5.5"}
@@ -60,7 +55,4 @@ jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
-
 
