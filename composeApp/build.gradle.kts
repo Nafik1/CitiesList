@@ -8,6 +8,19 @@ plugins {
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kotlin.serialization)
+    id("dev.limebeck.build-time-config") version "2.3.0"
+}
+
+buildTimeConfig {
+    config {
+        packageName.set("dev.limebeck.config")
+        objectName.set("MyConfig")
+        destination.set(project.buildDir)
+
+        configProperties {
+            val apikey by string("zDn1kW/ZYGPiDHE4RP0hag==FYyfiq3ilM7Ugw7R")
+        }
+    }
 }
 
 kotlin {

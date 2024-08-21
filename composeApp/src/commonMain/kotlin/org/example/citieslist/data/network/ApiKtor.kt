@@ -1,5 +1,6 @@
 package org.example.citieslist.data.network
 
+import dev.limebeck.config.MyConfig
 import org.example.citieslist.data.model.CityDto
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
@@ -35,7 +36,7 @@ class ApiKtor {
         }
         return client.get("${BASE_URL}city?limit=25") {
             headers {
-                append("X-Api-Key", "zDn1kW/ZYGPiDHE4RP0hag==FYyfiq3ilM7Ugw7R")
+                append("X-Api-Key", MyConfig.apikey)
             }
             parameter("name", query)
         }
