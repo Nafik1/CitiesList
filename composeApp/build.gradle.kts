@@ -18,7 +18,7 @@ buildTimeConfig {
         destination.set(project.buildDir)
 
         configProperties {
-            val apikey by string("zDn1kW/ZYGPiDHE4RP0hag==FYyfiq3ilM7Ugw7R")
+            val apikey by string("CjyGnfpmUX/6b8yxsdChuA==X7foMnONJIe5QhQz")
         }
     }
 }
